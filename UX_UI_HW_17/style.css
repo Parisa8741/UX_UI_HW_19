@@ -1,0 +1,172 @@
+/* Navbar CSS */
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    padding: 50px;
+}
+
+.div logo {
+    width: 2%;
+    padding: 1%;
+    height: auto;
+}
+
+navigation {
+    width: 73%;
+    padding: 1%;
+}
+
+navigation ul {
+    width: 50%;
+    margin-left: auto;
+}
+
+/* Center images inside logo */
+.log img {
+    text-align: center;
+}
+
+/* Hero image CSS */
+.heroImg {
+    height: 600px;
+    padding: 25px;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* Footer CSS */
+footer {
+    background-color: #373738;
+    padding: 20px;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer ul li {
+    padding: 5px;
+}
+/* My UX Skills section coded using CSS flex */
+
+.mySkills {
+    margin-top: 50px; /* Adjust margin as needed */
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between; /* To evenly space the flex items */
+}
+
+.flexContainer > div {
+    width: 30%; /* Set width to 30% for each flex item */
+    padding: 20px; /* Adjust padding as needed */
+    margin: 0 10px; /* Adjust margin as needed */
+    background-color: #f0f0f0; /* Example background color */
+    border-radius: 10px; /* Example border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Example box shadow */
+}
+
+.flexContainer > div img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    display: block; /* Prevents image spacing issues */
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.flexContainer > div h3 {
+    font-size: 1.2rem; /* Example font size */
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.flexContainer > div p {
+    font-size: 1rem; /* Example font size */
+    color: #666; /* Example text color */
+}
+
+/* Styling for My Work section using CSS Grid */
+
+/* My Work Section Constructed using CSS Grid */
+.workGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+    gap: 20px; /* Gap between grid items */
+}
+
+/* Grid item styling */
+.workGrid > div {
+    padding: 20px;
+    background-color: #f0f0f0; /* Example background color */
+    border-radius: 10px; /* Example border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Example box shadow */
+}
+
+/* Grid areas */
+.workGrid > div:nth-child(1) {
+    grid-area: firstProject;
+}
+
+.workGrid > div:nth-child(2) {
+    grid-area: secondProject;
+}
+
+
+/* Styling for project titles */
+.workGrid h4 {
+    font-size: 1.2rem; /* Example font size */
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+/* Styling for project descriptions */
+.workGrid p {
+    font-size: 1rem; /* Example font size */
+    color: #666; /* Example text color */
+}
+
+/* Styling for "View Project" buttons */
+.workGrid button {
+    background-color: #007bff; /* Example button background color */
+    color: #fff; /* Example button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.workGrid button:hover {
+    background-color: #0056b3; /* Example button hover background color */
+}
+/* Mobile Media Query */
+@media only screen and (max-width: 600px) {
+    /* Adjustments for mobile devices */
+
+    /* My UX Skills Section */
+    .flexContainer {
+        flex-direction: column; /* Display items in a column */
+    }
+
+    .flexContainer > div {
+        width: 100%; /* Take up full width */
+        margin-bottom: 20px; /* Adjust margin as needed */
+    }
+
+    /* My Work Section */
+    .workGrid {
+        grid-template-areas: 
+            "firstProject"
+            "secondProject";
+          
+        grid-template-rows: auto; /* Auto-sized rows */
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+}
+
+
+
+
+
+    
