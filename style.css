@@ -1,0 +1,164 @@
+
+.inline-block {
+    display:inline;
+    vertical-align: top;
+    padding: 10px;
+ 
+    text-align: center;}
+header{
+background-color: whitesmoke;
+
+}
+
+.logo img {
+    width: 5%;
+    padding: 1%;
+   text-align: left;
+   height: 50;
+   margin-left: auto;
+   float: left;
+}
+
+nav {
+    width: 100%;
+    padding: 1%;
+}
+
+ul {
+    width: 50%;
+    margin-left: auto;
+}
+.navigation {display: flex;}
+/* Hero image CSS */
+.heroImg {
+    height: 600px;
+    padding: 25px;
+}
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* Footer CSS */
+footer {
+    background-color: #373738;
+    padding: 20px;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer ul li {
+    padding: 5px;
+}
+/* My UX Skills section coded using CSS flex */
+
+.mySkills {
+    margin-top: 50px; /* Adjust margin as needed */
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.flexContainer > div {
+    width: 33%; /* Set width to 30% for each flex item */
+    padding: 20px; /* Adjust padding as needed */
+    margin: 0 10px; 
+    background-color: #f0f0f0; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.flexContainer > div img {
+    max-width: 100%;
+    display: block; 
+    margin-bottom: 10px; 
+    height: 400px;
+}
+
+.flexContainer > div h3 {
+    font-size: 1.2rem; 
+    margin-bottom: 10px; 
+}
+
+.flexContainer > div p {
+    font-size: 1rem; 
+    color: #666; 
+}
+
+/* Styling for My Work section using CSS Grid */
+
+
+
+.workGrid {
+    /* Apply named grid areas to child divs */
+    display: grid;
+    grid-area: project1;
+    grid-template-areas: "project1 project2";
+    
+    grid-gap: 20px;
+}
+
+.workGrid div {
+    /* Styling for individual project containers */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.workGrid img {
+ 
+    width: 800px;
+    height: 400px;
+    filter: blur();
+    background-size: cover ;
+}
+
+
+.project1{ grid-area: project1;}
+
+.project2{ grid-area: project2;}  
+
+
+
+
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+.flexContainer{display: flex;
+flex-direction: column;}
+
+.workGrid {
+    /* Apply named grid areas to child divs */
+    display: grid;
+    grid-area: project1;
+    grid-template-areas: "project1"
+    "project2";
+    grid-gap: 20px;
+}
+.project1{ grid-area: project1;}
+
+.project2{ grid-area: project2;}  
+
+}
