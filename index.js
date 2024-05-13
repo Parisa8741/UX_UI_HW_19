@@ -10,10 +10,10 @@ $(document).ready(function(){
     // Function to increase button size on hover
     $('.CV').hover(
         function() {
-            $(this).css('font-size', '1.2em');
+            $(this).css('background-color', 'black'); $(this).css('color', 'white');
         },
         function() {
-            $(this).css('font-size', '1em');
+            $(this).css('background-color', 'white'); $(this).css('color', 'black');
         }
     );
 });
